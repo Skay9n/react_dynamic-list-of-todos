@@ -58,8 +58,7 @@ export const TodoList: React.FC<Props> = ({ todos, selectedTodo, onShow }) => (
             >
               <span className="icon">
                 <i
-                  className={classnames({
-                    'has-text-success': todo.completed,
+                  className={classnames('has-text-success', {
                     'has-text-danger': !todo.completed,
                   })}
                 />
